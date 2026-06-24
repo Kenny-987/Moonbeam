@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonbeam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/989ba93bfa.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<!-- NAV -->
+ <header>
+<nav id="nav">
+    <a href="#" class="nav-logo">
+        <img src="./images/cd6c7b4c53864e04812e92e238c8d0e6.png" alt="">
+    </a>
+    <ul class="nav-links">
+        <li><a href="#now-showing">About</a></li>
+        <li><a href="#showtimes">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-btn">Book Now</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-circle">
+        <span></span><span></span><span></span>
+    </div>
+    <!-- <p class="hero-eyebrow">Est. 1947 · Grand Avenue</p> -->
+    <h1 class="hero-title">Moonbeam<br>A Better Way<br><em>to Watch</em></h1>
+    <div class="hero-sub">
+        <!-- <p class="hero-tagline">Premier cinema in the heart of the city. Handpicked films. Unmatched atmosphere.</p> -->
+        <a href="#now-showing" class="btn">Book Tickets</a>
+    </div>
+</section>
+
+ </header>
+
+
+
+
+
+<!-- countdown timer-->
+ <section class="countdown-section">
+    <div class="countdown-inner">
+ 
+      <!-- Default: countdown state -->
+      <div id="countdown-state">
+        <p class="countdown-label">Next Screening</p>
+        <p class="countdown-date" id="screening-date"></p>
+ 
+        <div class="countdown-units">
+          <div class="countdown-unit">
+            <span class="unit-number" id="days">00</span>
+            <span class="unit-label">Days</span>
+          </div>
+          <span class="countdown-colon">:</span>
+          <div class="countdown-unit">
+            <span class="unit-number" id="hours">00</span>
+            <span class="unit-label">Hrs</span>
+          </div>
+          <span class="countdown-colon">:</span>
+          <div class="countdown-unit">
+            <span class="unit-number" id="minutes">00</span>
+            <span class="unit-label">Min</span>
+          </div>
+          <span class="countdown-colon">:</span>
+          <div class="countdown-unit">
+            <span class="unit-number" id="seconds">00</span>
+            <span class="unit-label">Sec</span>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Screening in progress state -->
+      <div class="screening-state" id="screening-state">
+        <div class="screening-indicator">
+          <span class="screening-dot"></span>
+          <span>Live tonight</span>
+        </div>
+        <h2 class="screening-title">Now Screening</h2>
+        <p class="screening-sub">The projector is running. Grab a seat.</p>
+        <p class="screening-ends">Ends at 21:00</p>
+      </div>
+ 
+    </div>
+  </section>
+
+
+
+<!-- ABOUT -->
+<section class="section section-dark" id="about">
+    <div class="section-header about-header">
+        <h2 class="section-title about-title">About Moonbeam</h2>
+        <div class="curved-line"></div>
+
+    </div>
+    <div class="about-grid">
+        <div class="grid-item about-text">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sequi laudantium tenetur accusamus dolorem enim delectus ut architecto voluptatibus nemo odit, officia minus iste, esse facilis aut repudiandae ullam doloribus?</p>
+    <br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae assumenda totam beatae est sint repellendus voluptatem a ut eum, nemo in! Commodi atque ipsa nobis, ea expedita at sequi accusantium tempora corporis soluta labore, pariatur hic? Velit corrupti ad doloribus quo tempora quasi alias saepe, natus architecto a eveniet repudiandae.</p>
+        </div>
+        <div class="grid-item about-checklist">
+            <h2>Moonbeam Experience</h2>
+            <div class="about-items">
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> Snacks</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Amazing Atmosphere</li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> Great Company</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Handpicked Movies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- THE VENUE -->
+<section class="section venue-section" id="venue">
+    <div class="section-header venue-header">
+        <h2 class="section-title ">The Venue</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Middy's Cafe</p>
+    </div>
+    <p style="color: black; margin-bottom: 30px;">Spacious, cozy and the perfect place for movie nights.</p>
+    <div class="bento">
+        <!-- Replace src with your actual image paths -->
+
+        <div class="bento-cell cell-1">
+        <img src="images/venue2.jpg" alt="Detail shot" />
+      </div>
+        <div class="bento-cell cell-5">
+          <img src="/images/middysvenue1.jpg" alt="Ambience" />
+        </div>
+
+      <div class="bento-cell cell-3">
+        <img src="/images/venue3.jpg" alt="Main café space" />
+      </div>
+      <div class="bento-cell cell-2">
+        <img src="/images/venue5.jpg" alt="Seating area" />
+      </div>
+      <div class="bento-cell cell-4">
+        <img src="/images/venue4.jpg" alt="Coffee bar" />
+      </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- GALLERY -->
+<section class="section" id="coming-soon">
+    <div class="section-header">
+        <h2 class="section-title">Gallery</h2>
+        <p>Amazing Moonbeam Moments</p>
+    </div>
+    <p class="gallery-count" id="gallery-count"></p>
+ <div class="masonry" id="masonry">
+      <div class="gallery-state" id="gallery-state">Loading...</div>
+    </div>
+ 
+    <div class="gallery-footer">
+      <button class="btn-show-more hidden" id="btn-show-more">Show All</button>
+    </div>
+  </section>
+ 
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-inner">
+      <button class="modal-close" id="modal-close">&#x2715;</button>
+      <button class="modal-prev" id="modal-prev">&#8592;</button>
+      <img class="modal-media" id="modal-img" src="" alt="" style="display:none"/>
+      <video class="modal-media" id="modal-video" controls style="display:none"></video>
+      <button class="modal-next" id="modal-next">&#8594;</button>
+      <p class="modal-counter" id="modal-counter"></p>
+    </div>
+  </div>
+</section>
+
+
+
+ <section class="faq">
+    <p class="faq-label">Got Questions</p>
+    <h2 class="faq-title">FAQ</h2>
+ 
+    <ul class="faq-list">
+ 
+      <li class="faq-item">
+        <button class="faq-question">
+          How much does it cost?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Tickets are $5 per person, $6 if you are use Ecocash.</p>
+        </div>
+      </li>
+ 
+      <li class="faq-item">
+        <button class="faq-question">
+          What time does it start?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>From 6:30pm to 9:00pm every Friday.</p>
+        </div>
+      </li>
+ 
+      <li class="faq-item">
+        <button class="faq-question">
+          Where are you located?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>We screen at Middy's Cafe, 129 Josiah Tongogara St, between 13-14th Ave, Bulawayo.</p>
+        </div>
+      </li>
+ 
+      <li class="faq-item">
+        <button class="faq-question">
+          Do I need to book in advance?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, seats are limited so we recommend booking ahead to avoid missing out.</p>
+        </div>
+      </li>
+ 
+      <li class="faq-item">
+        <button class="faq-question">
+          Where do I pay?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Payment is made at Middy's Cafe.</p>
+        </div>
+      </li>
+ 
+      <li class="faq-item">
+        <button class="faq-question">
+          What is the age rating?
+          <span class="faq-icon"></span>
+        </button>
+        <div class="faq-answer">
+          <p>Our screenings are generally suited for adults aged 18 and over. — adjust based on client's policy</p>
+        </div>
+      </li>
+ 
+    </ul>
+  </section>
+
+ <section class="contact section">
+    <div class="contact-inner">
+ 
+      <!-- Left -->
+      <div class="contact-left">
+        <p class="contact-label">Reserve Your Seat</p>
+        <h2 class="contact-title">See You Friday</h2>
+        <p class="contact-desc">Seats are limited and the movie is always a surprise. Fill in your details and we'll confirm your spot.</p>
+ 
+        <ul class="contact-details">
+          <li>Every Friday <span>Doors open 6:30 PM</span></li>
+          <li>Location <span>Middy's Cafe, 129 Josiah Tongogara St, between 13-14th Ave, Bulawayo.</span></li>
+          <li>Instagram <span>@moonbeams</span></li>
+        </ul>
+      </div>
+ 
+      <!-- Right — Form -->
+      <div class="contact-right">
+ 
+        <!-- Netlify Form -->
+        <form
+          class="contact-form"
+          name="reservations"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          id="reservation-form"
+        >
+          <!-- Netlify hidden fields -->
+          <input type="hidden" name="form-name" value="reservations" />
+          <input type="hidden" name="bot-field" style="display:none" />
+ 
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+263 7X XXX XXXX" required />
+            </div>
+          </div>
+ 
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="" disabled selected>Select</option>
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6+">6 or more</option>
+            </select>
+          </div>
+ 
+          <div class="form-group">
+            <label for="message">Anything else? (optional)</label>
+            <textarea id="message" name="message" placeholder="Special requests, dietary needs, etc."></textarea>
+          </div>
+ 
+          <button type="submit" class="btn-submit">Reserve My Seat</button>
+        </form>
+ 
+        <!-- Success message shown after submit -->
+        <div class="form-success" id="form-success">
+          <h3>You're on the list</h3>
+          <p>We'll be in touch to confirm your reservation. See you Friday.</p>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div class="footer-top">
+        <div>
+            <div class="footer-brand">Moonbeam</div>
+            <p class="footer-tagline">Middy's Cafe, 129 Josiah Tongogara St, between 13-14th Ave, Bulawayo.<br>Friday 18:30-21:00</p>
+        </div>
+        <div>
+            <div class="col-title">Navigate</div>
+            <ul class="col-links">
+                <li><a href="#now-showing">About</a></li>
+                <li><a href="#showtimes">Gallery</a></li>
+                <li><a href="#coming-soon">Contact</a></li>
+
+            </ul>
+        </div>
+        <div>
+            <div class="col-title">Contact</div>
+            <ul class="col-links">
+                <!-- <li><a href="mailto:info@noircinemas.com">info@noircinemas.com</a></li> -->
+                <li><a href="tel:+15552048800">078 XXXXXXXX</a></li>
+                <!-- <li><a href="#">Press &amp; Media</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Moonbeam. All rights reserved.</span>
+        <span class="footer-copy">Developed by Kiaat Labs.</span>
+    </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
+
+
+
