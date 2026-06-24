@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/989ba93bfa.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="mediaqueries.css">
     
 </head>
 <body>
@@ -24,22 +25,26 @@
         <li><a href="#now-showing">About</a></li>
         <li><a href="#showtimes">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><button class="nav-btn">Book Now</button></li>
     </ul>
-    <button class="nav-btn">Book Now</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-circle">
+    <!-- <div class="hero-circle">
         <span></span><span></span><span></span>
-    </div>
+    </div> -->
     <!-- <p class="hero-eyebrow">Est. 1947 · Grand Avenue</p> -->
     <h1 class="hero-title">Moonbeam<br>A Better Way<br><em>to Watch</em></h1>
     <div class="hero-sub">
-        <!-- <p class="hero-tagline">Premier cinema in the heart of the city. Handpicked films. Unmatched atmosphere.</p> -->
-        <a href="#now-showing" class="btn">Book Tickets</a>
+        <p class="hero-tagline">Premier cinema in the heart of the city. Handpicked films. Unmatched atmosphere.</p>
+        <a href="#contact" class="btn">Book Tickets</a>
     </div>
 </section>
+
 
  </header>
 
@@ -342,6 +347,12 @@
         <div>
             <div class="footer-brand">Moonbeam</div>
             <p class="footer-tagline">Middy's Cafe, 129 Josiah Tongogara St, between 13-14th Ave, Bulawayo.<br>Friday 18:30-21:00</p>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
         </div>
         <div>
             <div class="col-title">Navigate</div>
@@ -349,15 +360,12 @@
                 <li><a href="#now-showing">About</a></li>
                 <li><a href="#showtimes">Gallery</a></li>
                 <li><a href="#coming-soon">Contact</a></li>
-
             </ul>
         </div>
         <div>
             <div class="col-title">Contact</div>
             <ul class="col-links">
-                <!-- <li><a href="mailto:info@noircinemas.com">info@noircinemas.com</a></li> -->
                 <li><a href="tel:+15552048800">078 XXXXXXXX</a></li>
-                <!-- <li><a href="#">Press &amp; Media</a></li> -->
             </ul>
         </div>
     </div>
