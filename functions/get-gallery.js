@@ -1,7 +1,7 @@
-exports.handler = async () => {
+export async function onRequestGet(context) {
   try {
-    const privateKey = process.env.IMAGEKIT_PRIVATE_KEY;
-    const encoded = Buffer.from(privateKey + ':').toString('base64');
+    const privateKey = context.env.IMAGEKIT_PRIVATE_KEY;
+    const encoded = btoa(privateKey + ':');
 
     const response = await fetch(
       'https://api.imagekit.io/v1/files?limit=100&sort=DESC_CREATED',
@@ -18,7 +18,6 @@ exports.handler = async () => {
 
     const files = await response.json();
 
-    // Only return what the frontend needs
     const cleaned = files.map((file) => ({
       url: file.url,
       type: file.fileType === 'non-image' ? 'video' : 'image',
@@ -26,15 +25,14 @@ exports.handler = async () => {
       thumbnail: file.fileType === 'non-image' ? file.thumbnail : null,
     }));
 
-    return {
-      statusCode: 200,
+    return new Response(JSON.stringify(cleaned), {
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(cleaned),
-    };
+    });
+
   } catch (err) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: err.message }),
-    };
+    return new Response(JSON.stringify({ error: err.message }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
-};
+}
