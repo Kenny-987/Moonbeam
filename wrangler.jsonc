@@ -4,7 +4,7 @@
   "main": "index.js", // Points to your new worker script
   "compatibility_date": "2026-06-25",
   "assets": {
-    "directory": "/", // The folder containing your HTML files
+    "directory": "./", // The folder containing your HTML files
     "binding": "ASSETS"
   },
   "vars": {
