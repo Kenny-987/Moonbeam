@@ -1,0 +1,13 @@
+// wrangler.jsonc
+{
+  "name": "moonbeam",
+  "main": "index.js", // Points to your new worker script
+  "compatibility_date": "2026-06-25",
+  "assets": {
+    "directory": "/", // The folder containing your HTML files
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "IMAGEKIT_PRIVATE_KEY":"private_SJ/HPPoTpQsdre5QRQtE+C6EZv8="
+  }
+}
