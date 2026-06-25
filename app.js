@@ -146,7 +146,7 @@ navLinks.querySelectorAll('a').forEach(link => {
     // ── FETCH FROM NETLIFY FUNCTION ──
     async function loadGallery() {
       try {
-        const res = await fetch('/.netlify/functions/get-gallery');
+        const res = await fetch('/get-gallery');
         if (!res.ok) throw new Error('Failed to load gallery');
         const files = await res.json();
  
@@ -328,3 +328,88 @@ navLinks.querySelectorAll('a').forEach(link => {
         alert('Something went wrong. Please try again.');
       }
     });
+
+    // ── GSAP ANIMATIONS ──
+gsap.registerPlugin(ScrollTrigger);
+
+// NAV
+gsap.from('#nav', {
+  y: -80, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.1
+});
+
+// HERO
+gsap.from('.hero-title', {
+  y: 60, opacity: 0, duration: 1.1, ease: 'power3.out', delay: 0.4
+});
+gsap.from('.hero-tagline', {
+  y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 0.85
+});
+gsap.from('.hero .btn', {
+  y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 1.05
+});
+
+// COUNTDOWN
+gsap.from('.countdown-label, .countdown-date', {
+  y: 30, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out',
+  scrollTrigger: { trigger: '.countdown-section', start: 'top 85%' }
+});
+gsap.from('.countdown-unit', {
+  y: 40, opacity: 0, duration: 0.6, stagger: 0.1, ease: 'power2.out',
+  scrollTrigger: { trigger: '.countdown-units', start: 'top 85%' }
+});
+
+// ABOUT
+gsap.from('.about-title', {
+  x: -50, opacity: 0, duration: 0.9, ease: 'power3.out',
+  scrollTrigger: { trigger: '.about-header', start: 'top 85%' }
+});
+gsap.from('.about-text p', {
+  y: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: 'power2.out',
+  scrollTrigger: { trigger: '.about-text', start: 'top 85%' }
+});
+gsap.from('.about-checklist', {
+  x: 50, opacity: 0, duration: 0.9, ease: 'power3.out',
+  scrollTrigger: { trigger: '.about-checklist', start: 'top 85%' }
+});
+
+// VENUE
+gsap.from('.venue-header', {
+  y: 40, opacity: 0, duration: 0.8, ease: 'power3.out',
+  scrollTrigger: { trigger: '.venue-section', start: 'top 85%' }
+});
+gsap.from('.bento-cell', {
+  y: 50, opacity: 0, scale: 0.96, duration: 0.7, stagger: 0.1, ease: 'power2.out',
+  scrollTrigger: { trigger: '.bento', start: 'top 85%' }
+});
+
+// GALLERY
+gsap.from('#coming-soon .section-header', {
+  y: 40, opacity: 0, duration: 0.8, ease: 'power3.out',
+  scrollTrigger: { trigger: '#coming-soon', start: 'top 85%' }
+});
+
+// FAQ
+gsap.from('.faq-label, .faq-title', {
+  y: 30, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out',
+  scrollTrigger: { trigger: '.faq', start: 'top 85%' }
+});
+gsap.from('.faq-item', {
+  y: 25, opacity: 0, duration: 0.6, stagger: 0.08, ease: 'power2.out',
+  scrollTrigger: { trigger: '.faq-list', start: 'top 85%' }
+});
+
+// CONTACT
+gsap.from('.contact-left', {
+  x: -50, opacity: 0, duration: 0.9, ease: 'power3.out',
+  scrollTrigger: { trigger: '.contact', start: 'top 80%' }
+});
+gsap.from('.contact-right', {
+  x: 50, opacity: 0, duration: 0.9, ease: 'power3.out',
+  scrollTrigger: { trigger: '.contact', start: 'top 80%' }
+});
+
+// FOOTER
+gsap.from('.footer-brand, .footer-tagline, .footer-socials', {
+  y: 30, opacity: 0, duration: 0.7, stagger: 0.15, ease: 'power2.out',
+  scrollTrigger: { trigger: 'footer', start: 'top 90%' }
+});
