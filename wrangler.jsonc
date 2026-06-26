@@ -8,6 +8,7 @@
     "binding": "ASSETS"
   },
   "vars": {
-    "IMAGEKIT_PRIVATE_KEY":"private_SJ/HPPoTpQsdre5QRQtE+C6EZv8="
+    "IMAGEKIT_PRIVATE_KEY":"private_SJ/HPPoTpQsdre5QRQtE+C6EZv8=",
+    "RESEND_API_KEY":"re_e7P8gC6a_Lg9LJgzvetLnPtzoSwdvreYg"
   }
 }

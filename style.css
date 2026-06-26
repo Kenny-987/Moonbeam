@@ -12,7 +12,9 @@
         }
 
         html { scroll-behavior: smooth; }
-
+html, body {
+    overflow-x: hidden;
+}
         body {
             background: var(--gray-1);
             color: var(--white);
@@ -54,6 +56,7 @@
             align-items: center;
             padding: 28px 60px;
             transition: background 0.3s, backdrop-filter 0.3s;
+            
         }
         /* nav.scrolled {
             background: rgba(8,8,8,0.96);
@@ -172,7 +175,7 @@
     z-index: 300;
     position: fixed;
     top: 32px;
-    right: 60px;
+    right: 100px;
 }
 .nav-toggle span {
     display: block;

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moonbeam</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +12,27 @@
 <link rel="stylesheet" href="mediaqueries.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Moonbeam Cinema | Friday Movie Nights in Bulawayo</title>
+<meta name="description" content="Moonbeam Cinema hosts weekly movie screenings every Friday at Middy's Cafe, Bulawayo. Handpicked films, great atmosphere, $5 entry. Book your seat now.">
+<!-- <meta name="keywords" content="cinema Bulawayo, movie night Bulawayo, Moonbeam Cinema, Friday movies Bulawayo, Middy's Cafe, outdoor cinema Zimbabwe, what to do in Bulawayo, where to wacth movies in Bulawayo, date night ideas, activities to do in Bulawayo">
+<link rel="canonical" href="https://yoursite.com/" />
+-->
+
+<!-- Open Graph -->
+<meta property="og:title" content="Moonbeam Cinema | Friday Movie Nights in Bulawayo">
+<meta property="og:description" content="Weekly movie screenings every Friday at Middy's Cafe, Bulawayo. $5 entry. Handpicked films, snacks, great vibes.">
+<meta property="og:image" content="https://yoursite.com/images/og-cover.jpg">
+<meta property="og:url" content="https://yoursite.com/">
+<meta property="og:type" content="website">
+
+<!-- Twitter/X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Moonbeam Cinema | Friday Movie Nights in Bulawayo">
+<meta name="twitter:description" content="Weekly Friday screenings at Middy's Cafe, Bulawayo. $5 entry.">
+<!-- <meta name="twitter:image" content="https://yoursite.com/images/og-cover.jpg">  -->
 </head>
 <body>
 
@@ -24,10 +43,10 @@
         <img src="./images/cd6c7b4c53864e04812e92e238c8d0e6.png" alt="">
     </a>
     <ul class="nav-links">
-        <li><a href="#now-showing">About</a></li>
-        <li><a href="#showtimes">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button class="nav-btn">Book Now</button></li>
+        <li><button class="nav-btn"><a href="#contact">Book Now</a></button></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -36,10 +55,7 @@
 
 <!-- HERO -->
 <section class="hero">
-    <!-- <div class="hero-circle">
-        <span></span><span></span><span></span>
-    </div> -->
-    <!-- <p class="hero-eyebrow">Est. 1947 · Grand Avenue</p> -->
+
     <h1 class="hero-title">Moonbeam<br>A Better Way<br><em>to Watch</em></h1>
     <div class="hero-sub">
         <p class="hero-tagline">Premier cinema in the heart of the city. Handpicked films. Unmatched atmosphere.</p>
@@ -111,9 +127,9 @@
     </div>
     <div class="about-grid">
         <div class="grid-item about-text">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sequi laudantium tenetur accusamus dolorem enim delectus ut architecto voluptatibus nemo odit, officia minus iste, esse facilis aut repudiandae ullam doloribus?</p>
+    <p>Moonbeam Cinema is a registered entertainment company based in Bulawayo, Zimbabwe, dedicated to bringing people together through unique movie experiences. Through regular screenings, creative venues, and a strong sense of community, we are reimagining cinema for a new generation.</p>
     <br>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae assumenda totam beatae est sint repellendus voluptatem a ut eum, nemo in! Commodi atque ipsa nobis, ea expedita at sequi accusantium tempora corporis soluta labore, pariatur hic? Velit corrupti ad doloribus quo tempora quasi alias saepe, natus architecto a eveniet repudiandae.</p>
+    <p>More than movies. An experience worth remembering. 🌙🎬</p>
         </div>
         <div class="grid-item about-checklist">
             <h2>Moonbeam Experience</h2>
@@ -195,7 +211,7 @@
       <p class="modal-counter" id="modal-counter"></p>
     </div>
   </div>
-</section>
+
 
 
 
@@ -254,16 +270,7 @@
           <p>Payment is made at Middy's Cafe.</p>
         </div>
       </li>
- 
-      <li class="faq-item">
-        <button class="faq-question">
-          What is the age rating?
-          <span class="faq-icon"></span>
-        </button>
-        <div class="faq-answer">
-          <p>Our screenings are generally suited for adults aged 18 and over. — adjust based on client's policy</p>
-        </div>
-      </li>
+
  
     </ul>
   </section>
@@ -290,14 +297,8 @@
         <!-- Netlify Form -->
         <form
           class="contact-form"
-          name="reservations"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
           id="reservation-form"
         >
-          <!-- Netlify hidden fields -->
-          <input type="hidden" name="form-name" value="reservations" />
           <input type="hidden" name="bot-field" style="display:none" />
  
           <div class="form-row">
@@ -350,34 +351,101 @@
             <div class="footer-brand">Moonbeam</div>
             <p class="footer-tagline">Middy's Cafe, 129 Josiah Tongogara St, between 13-14th Ave, Bulawayo.<br>Friday 18:30-21:00</p>
             <div class="footer-socials">
-                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/moonbeam_cinema?igsh=ZmptZGw4M2tpanRw&utm_source=qr" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/263781797566" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@moonbeamcinema?_r=1&_t=ZS-97V4nldH7JM" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
         <div>
             <div class="col-title">Navigate</div>
             <ul class="col-links">
-                <li><a href="#now-showing">About</a></li>
-                <li><a href="#showtimes">Gallery</a></li>
-                <li><a href="#coming-soon">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div>
             <div class="col-title">Contact</div>
             <ul class="col-links">
-                <li><a href="tel:+15552048800">078 XXXXXXXX</a></li>
+                <li><a href="tel:+263781797566">0781797566</a></li>
             </ul>
         </div>
     </div>
     <div class="footer-bottom">
         <span class="footer-copy">© 2026 Moonbeam. All rights reserved.</span>
-        <span class="footer-copy">Developed by Kiaat Labs.</span>
+        <span class="footer-copy"><a style="color: white;" href="http://kiaat.cloud">Developed by Kiaat Labs.</span></a>
     </div>
 </footer>
 
 <script src="./app.js"></script>
+<!-- <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Moonbeam Cinema",
+      "description": "Weekly Friday movie screenings at Middy's Cafe in Bulawayo, Zimbabwe.",
+      "url": "https://yoursite.com",
+      "telephone": "+263781797566",
+      "priceRange": "$",
+      "image": "https://yoursite.com/images/og-cover.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "129 Josiah Tongogara St, between 13-14th Ave",
+        "addressLocality": "Bulawayo",
+        "addressCountry": "ZW"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "18:30",
+        "closes": "21:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/moonbeam_cinema",
+        "https://www.tiktok.com/@moonbeamcinema"
+      ]
+    },
+    {
+      "@type": "Event",
+      "name": "Moonbeam Friday Movie Night",
+      "description": "Weekly Friday cinema screening at Middy's Cafe, Bulawayo. Handpicked films, snacks, $5 entry.",
+      "startDate": "2026-06-27T18:30:00+02:00",
+      "endDate": "2026-06-27T21:00:00+02:00",
+      "eventSchedule": {
+        "@type": "Schedule",
+        "repeatFrequency": "P1W",
+        "byDay": "https://schema.org/Friday",
+        "startTime": "18:30",
+        "endTime": "21:00"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Middy's Cafe",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "129 Josiah Tongogara St, between 13-14th Ave",
+          "addressLocality": "Bulawayo",
+          "addressCountry": "ZW"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "5",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://yoursite.com/#contact"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Moonbeam Cinema",
+        "url": "https://yoursite.com"
+      }
+    }
+  ]
+}
+</script> -->
 </body>
 </html>
 

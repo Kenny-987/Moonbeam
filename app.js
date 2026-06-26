@@ -307,27 +307,6 @@ navLinks.querySelectorAll('a').forEach(link => {
       });
     });
 
-     const form = document.getElementById('reservation-form');
-    const success = document.getElementById('form-success');
- 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
- 
-      const data = new FormData(form);
- 
-      try {
-        await fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(data).toString(),
-        });
- 
-        form.style.display = 'none';
-        success.style.display = 'block';
-      } catch (err) {
-        alert('Something went wrong. Please try again.');
-      }
-    });
 
     // ── GSAP ANIMATIONS ──
 gsap.registerPlugin(ScrollTrigger);
@@ -412,4 +391,28 @@ gsap.from('.contact-right', {
 gsap.from('.footer-brand, .footer-tagline, .footer-socials', {
   y: 30, opacity: 0, duration: 0.7, stagger: 0.15, ease: 'power2.out',
   scrollTrigger: { trigger: 'footer', start: 'top 90%' }
+});
+
+const form = document.getElementById('reservation-form');
+const success = document.getElementById('form-success');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+
+  const data = new FormData(form);
+
+  const res = await fetch('/submit', {
+    method: 'POST',
+    body: data
+  });
+
+  const result = await res.json();
+
+  if (result.success) {
+    form.style.display = 'none';
+    success.style.display = 'block';
+  } else {
+    alert('Something went wrong. Please try again.');
+  }
 });
