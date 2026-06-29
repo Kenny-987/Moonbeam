@@ -396,23 +396,23 @@ gsap.from('.footer-brand, .footer-tagline, .footer-socials', {
 const form = document.getElementById('reservation-form');
 const success = document.getElementById('form-success');
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
+// form.addEventListener('submit', async (e) => {
+//   e.preventDefault();
 
 
-  const data = new FormData(form);
+//   const data = new FormData(form);
 
-  const res = await fetch('/submit', {
-    method: 'POST',
-    body: data
-  });
+//   const res = await fetch('/api/submit', {
+//     method: 'POST',
+//     body: data
+//   });
 
-  const result = await res.json();
+//   const result = await res.json();
 
-  if (result.success) {
-    form.style.display = 'none';
-    success.style.display = 'block';
-  } else {
-    alert('Something went wrong. Please try again.');
-  }
-});
+//   if (result.success) {
+//     form.style.display = 'none';
+//     success.style.display = 'block';
+//   } else {
+//     alert('Something went wrong. Please try again.');
+//   }
+// });

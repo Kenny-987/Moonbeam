@@ -293,13 +293,15 @@
  
       <!-- Right — Form -->
       <div class="contact-right">
- 
-        <!-- Netlify Form -->
+            
+  
         <form
           class="contact-form"
-          id="reservation-form"
+          action="https://api.web3forms.com/submit" method="POST"
+          id="contact-form"
         >
-          <input type="hidden" name="bot-field" style="display:none" />
+          <input type="hidden" name="access_key" value="75b86fb5-6b22-4a4c-bb8f-85e180560a24">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
  
           <div class="form-row">
             <div class="form-group">
@@ -329,10 +331,13 @@
             <label for="message">Anything else? (optional)</label>
             <textarea id="message" name="message" placeholder="Special requests, dietary needs, etc."></textarea>
           </div>
+          <div class="h-captcha" data-captcha="true"></div>
  
           <button type="submit" class="btn-submit">Reserve My Seat</button>
         </form>
- 
+
+
+
         <!-- Success message shown after submit -->
         <div class="form-success" id="form-success">
           <h3>You're on the list</h3>
@@ -446,6 +451,22 @@
   ]
 }
 </script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', function(e) {
+
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field")
+        return
+    }
+});
+</script>
+
 </body>
 </html>
 
