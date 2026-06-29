@@ -146,7 +146,7 @@ navLinks.querySelectorAll('a').forEach(link => {
     // ── FETCH FROM NETLIFY FUNCTION ──
     async function loadGallery() {
       try {
-        const res = await fetch('/get-gallery');
+        const res = await fetch('/api/get-gallery');
         if (!res.ok) throw new Error('Failed to load gallery');
         const files = await res.json();
  
