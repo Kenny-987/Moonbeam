@@ -14,7 +14,7 @@
         html { scroll-behavior: smooth; }
 html, body {
     overflow-x: hidden;
-}
+} 
         body {
             background: var(--gray-1);
             color: var(--white);
